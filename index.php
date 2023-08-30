@@ -1,0 +1,36 @@
+<html>
+  <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Test</title>
+  </head>
+  <body>
+		<h2>É um prazer ter você aqui</h2>
+		<p>Preencha o formulário abaixo para falar conosco</p>
+		<form method="get" action="/respostasFormulario.php">
+			<div>
+				<label for="nome">Nome:</label><br/>
+				<input type="text" id="nome" name="nome" required>
+			</div>
+			<div>
+				<label for="email">Email:</label><br/>
+				<input type="email" id="email" name="email">
+			</div>
+			<div>
+				<label for="whatsapp">WhatsApp com DDD:</label><br/>
+				<input type="tel" id="whatsapp" name="whatsapp" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required />
+			</div>
+			<div>
+				<label for="estado">Seu estado:</label><br/>
+				<input type="text" id="estado" name="estado">
+			</div>
+			<input type="submit" value="Enviar">
+		</form>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  </body>
+</html>
